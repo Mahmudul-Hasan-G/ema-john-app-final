@@ -13,6 +13,9 @@ const Shop = () => {
    .then(data => setProducts(data))
   }, [])
 
+  const handleAddToCart = (jinish) =>{
+    console.log(jinish);}
+
   return (
     <div className='shop-container'>
       <div className='product-container'>
@@ -20,6 +23,7 @@ const Shop = () => {
           products.map( product => <Product
           key = {product.id}
           product ={product}
+          handleAddToCart ={handleAddToCart}
           ></Product>)
          }
       </div>

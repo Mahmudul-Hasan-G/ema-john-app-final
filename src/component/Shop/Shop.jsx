@@ -29,11 +29,11 @@ if(addedProduct){
 // step 3: get quantity of the product
 const quantity = storedCart[id];
 addedProduct.quantity = quantity;
-console.log(quantity);
+//console.log(quantity);
 // step 4: add the addedprodutc to the savecart
 savedCart.push(addedProduct);
 }
-console.log(addedProduct);
+//console.log(addedProduct);
     }
     //step 5:saved data
     setCart(savedCart);
@@ -44,7 +44,7 @@ console.log(addedProduct);
    setCart(newCart);
    addToDb(product.id);
   }
-  console.log(cart);
+  //console.log(cart);
   return (
     <div className='shop-container'>
       <div className='product-container'>
